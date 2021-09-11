@@ -1,0 +1,1 @@
+Basic calculator just to learn how stuff works with file management and branching
