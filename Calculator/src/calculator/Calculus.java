@@ -5,15 +5,15 @@ public class Calculus {
 	
 	protected void inputs() {
 		var.setA(Input.nextInt("Digite o primeiro numero"));
-		var.setB(Input.nextInt("digite o segundo numero"));
+		var.setB(Input.nextInt("Digite o segundo numero"));
 		var.setc(Input.nextChar("Digite a operacao"));
 	}
 	
 	protected void logic() {
 		switch(var.getC()) {
 		case '+':
-				var.setA(var.getA() + var.getB());
-				System.out.println(var.getA());
+			var.setA(var.getA() + var.getB());
+			System.out.println(var.getA());
 			break;
 		case '-':
 			var.setA(var.getA() - var.getB());
@@ -25,6 +25,10 @@ public class Calculus {
 			break;
 		case '/':
 			var.setA(var.getA() / var.getB());
+			System.out.println(var.getA());
+			break;
+		case '^':
+			var.setA(var.pow(var.getA(), var.getB()));
 			System.out.println(var.getA());
 			break;
 		}
