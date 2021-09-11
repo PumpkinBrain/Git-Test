@@ -5,6 +5,5 @@ public class Main {
 		Calculus calc = new Calculus();
 		
 		calc.inputs();
-		calc.logic();
 	}
 }
